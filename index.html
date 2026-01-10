@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karibu Grocery LTD</title>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="brand">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfRVOW73oQNoZPKcxX1l0Q2a2TFPyeFNWoow&s"
+            alt="Karibu Grocery Logo"
+          />
+          <h1>Karibu <span>Grocery</span> LTD</h1>
+        </div>
+
+        <p class="tagline">
+          Manage your Grocery Shop effectively with a modern system.
+        </p>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="right">
+        <div class="form-box">
+          <!-- LOGIN -->
+          <div id="loginForm">
+            <h2>Sign In</h2>
+
+            <div class="input-group">
+              <i class="fa fa-user icon-left"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+
+            <div class="input-group">
+              <i class="fa fa-lock icon-left"></i>
+              <input type="password" placeholder="Password" />
+              <i class="fa fa-eye icon-right"></i>
+            </div>
+
+            <div class="forgot">Forgot your password?</div>
+
+            <button style="width: 100%" onclick="login()">Login</button>
+
+            <div class="social-text">Or sign in with</div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-google"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+            <div class="link">
+              Don’t have an account?
+              <span onclick="showSignup()">Sign Up</span>
+            </div>
+          </div>
+
+          <!-- SIGN UP -->
+          <div id="signupForm" class="hidden">
+            <h2>Create Account</h2>
+
+            <div class="input-group">
+              <i class="fa fa-user icon-left"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+
+            <div class="input-group">
+              <i class="fa fa-lock icon-left"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+
+            <div class="input-group">
+              <i class="fa fa-lock icon-left"></i>
+              <input type="password" placeholder="Confirm Password" />
+            </div>
+
+            <select>
+              <option>Choose Role</option>
+              <option>Director</option>
+              <option>Manager</option>
+              <option>Sales Agent</option>
+            </select>
+
+            <select>
+              <option>Select Branch</option>
+              <option>Main Branch</option>
+              <option>Town Branch</option>
+            </select>
+
+            <div class="input-group">
+              <i class="fa fa-phone icon-left"></i>
+              <input type="tel" placeholder="Contact" />
+            </div>
+
+            <button style="width: 100%">Create Account</button>
+
+            <div class="social-text">Or sign up with</div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-google"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+            <div class="link">
+              Already have an account?
+              <span onclick="showLogin()">Login</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
