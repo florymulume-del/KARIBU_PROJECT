@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>KGL Groceries | Procurement</title>
+  <link rel="stylesheet" href="procurement.css">
 </head>
 <body>
-    <!-- LEFT -->
-      <!-- <div class="left">
-        <h1>Karibu Grocery LDD</h1>
-        <p>Manage your Grocery Shop effectively with a modern system.</p>
-    </div> -->
+ <!-- Header -->
+    
+<div class="container">
+  <h2>Record Procurement</h2>
+  <p class="subtitle">Add new produce to inventory</p>
+
+  <form id="procurementForm">
+
+    <div class="grid">
+      <div>
+        <label>Produce Name *</label>
+        <input type="text" id="produceName" placeholder="e.g. Maize" required>
+      </div>
+
+      <div>
+        <label>Produce Type *</label>
+        <input type="text" id="produceType" placeholder="e.g. Yellow Corn" required>
+      </div>
+
+      <div>
+        <label>Tonnage (tons) *</label>
+        <input type="number" id="tonnage" placeholder="e.g. 100" required>
+      </div>
+
+      <div>
+        <label>Cost per Ton (UGX) *</label>
+        <input type="number" id="costPerTon" placeholder="e.g. 500000" required>
+      </div>
+
+      <div>
+        <label>Sale Price per Ton (UGX) *</label>
+        <input type="number" id="salePrice" placeholder="e.g. 600000" required>
+      </div>
+
+      <div>
+        <label>Dealer Name *</label>
+        <input type="text" id="dealerName" placeholder="e.g. ABC Farms Ltd" required>
+      </div>
+
+      <div>
+        <label>Dealer Contact *</label>
+        <input type="tel" id="dealerContact" placeholder="+256700123456" required>
+      </div>
+
+      <div>
+        <label>Branch</label>
+        <input type="text" value="Branch A" disabled>
+      </div>
+    </div>
+
+    <div class="summary">
+      <p><strong>Total Purchase Cost:</strong> UGX <span id="totalCost">0</span></p>
+      <p><strong>Expected Profit:</strong> UGX <span id="profit">0</span></p>
+    </div>
+
+    <button type="submit">Record Procurement</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

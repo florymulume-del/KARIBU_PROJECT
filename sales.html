@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KGL Groceries LTD – Record Sale</title>
+  <link rel="stylesheet" href="sales.css" />
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- Header -->
+    <header class="header">
+      <div>
+        <h1>KGL Groceries LTD</h1>
+        <p>Wholesale Produce Management System</p><br>
+      </div>
+      <div class="user-info">
+        <span class="role">Sales Agent</span>
+        <span class="branch">Branch A</span>
+        <button class="logout">Logout</button>
+      </div>
+    </header>
+
+    <!-- Form Card -->
+    <div class="card">
+      <h2>Record Sale</h2>
+      <p class="subtitle">Process a regular sale transaction</p>
+
+      <form>
+        <!-- Product -->
+        <label> Select Product <span>*</span> </label>
+        <select required>
+          <option value="">Choose product</option>
+          <option>Rice</option>
+          <option>Beans</option>
+          <option>Maize</option>
+        </select>
+
+        <!-- Quantity & Tonnage -->
+        <div class="grid">
+          <div>
+            <label>Quantity (Bags/Units) <span>*</span></label>
+            <input type="number" placeholder="e.g. 100" required />
+          </div>
+
+          <div>
+            <label>Tonnage (tons) <span>*</span></label>
+            <input type="number" placeholder="e.g. 10" required />
+          </div>
+        </div>
+
+        <!-- Buyer -->
+        <label>Buyer Name <span>*</span></label>
+        <input type="text" placeholder="Enter buyer name" required />
+
+        <!-- Sales Agent -->
+        <label>Sales Agent</label>
+        <input type="text" value="Akanti Mulume" disabled />
+
+        <!-- Submit -->
+        <button type="submit" class="submit-btn">Record Sale</button>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
