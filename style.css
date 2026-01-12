@@ -296,6 +296,10 @@ table th{
     background:#f9f9f9;
 }
 
+.demo{
+    text-align: center;
+}
+
 @media(max-width:768px){
     .dashboard{
         flex-direction:column;

@@ -73,3 +73,4 @@ document.getElementById("procurementForm").addEventListener("submit", function(e
   totalCost.textContent = "0";
   profit.textContent = "0";
 });
+
